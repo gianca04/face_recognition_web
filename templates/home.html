@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad César Vallejo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #0056a4;
+    padding: 20px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Frontis_LosOlivos.tif/lossy-page1-270px-Frontis_LosOlivos.tif.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero .btn {
+    background-color: #0056a4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about, .campus, .ranking, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.campus-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.campus-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.footer {
+    background-color: #0056a4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+
+    <header class="header">
+        <div class="header-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Logo_UCV.png" alt="UCV Campus" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#campus">Campus</a></li>
+                    <li><a href="#ranking">Rankings</a></li>
+                    <li><a href="{{ url_for('index') }}">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Universidad César Vallejo</h1>
+            <p>Excelencia académica y compromiso social desde 1991</p>
+            <a href="#about" class="btn">Más información</a>
+        </section>
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                La <strong>Universidad César Vallejo (UCV)</strong>, fundada en 1991 en Trujillo, Perú, lleva el nombre del renombrado poeta César Vallejo. Con más de 100 mil estudiantes en 9 campus, nos enorgullece ser líderes en educación superior y responsabilidad social.
+            </p>
+            <p>
+                Somos parte de la Unión de Responsabilidad Social Universitaria de Latinoamérica (URSULA) y trabajamos para formar profesionales comprometidos con la sociedad y la investigación científica.
+            </p>
+        </section>
+        <section id="campus" class="campus">
+            <h2>Nuestros Campus</h2>
+            <div class="campus-container">
+                <div class="campus-item">
+                    <h3>Trujillo</h3>
+                    <p>Sede principal en Víctor Larco Herrera</p>
+                </div>
+                <div class="campus-item">
+                    <h3>Lima</h3>
+                    <p>Filial en Los Olivos y otras sedes estratégicas</p>
+                </div>
+                <div class="campus-item">
+                    <h3>Chiclayo, Piura, Chimbote, Tarapoto</h3>
+                    <p>Presencia en las principales regiones del Perú</p>
+                </div>
+            </div>
+        </section>
+        <section id="ranking" class="ranking">
+            <h2>Rankings y Reconocimientos</h2>
+            <p>
+                La UCV se posiciona regularmente entre las mejores universidades del Perú en diversos rankings nacionales e internacionales. Nuestra dedicación a la investigación, reputación académica y empleabilidad son reflejo de nuestro compromiso con la excelencia.
+            </p>
+            <ul>
+                <li>SCImago (2022): Top 10 en crecimiento</li>
+                <li>Scopus (2022): Top 8 en crecimiento</li>
+                <li>Presencia en rankings académicos nacionales</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contáctanos</h2>
+            <p>¡Estamos aquí para ayudarte a construir tu futuro!</p>
+            <a href="https://www.ucv.edu.pe" class="btn">Visita Nuestro Sitio Web</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Universidad César Vallejo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

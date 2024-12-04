@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial - UCV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1 class="login-title">Bienvenido al sistema de reconocimiento facial</h1>
+            <div class="login-options">
+                <a href="{{ url_for('login') }}" class="btn-login">Iniciar sesión</a>
+                <a href="{{ url_for('registrar') }}" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

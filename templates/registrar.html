@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar usuario - Universidad César Vallejo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="register-wrapper">
+        <div class="register-card">
+            <h1 class="register-title">Registrar un nuevo usuario</h1>
+
+            <!-- Flash messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="alert alert-{{ messages[0][0] }}">
+                        {{ messages[0][1] }}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" class="register-form">
+                <div class="form-group">
+                    <label for="user_id">ID de Usuario</label>
+                    <input type="text" class="form-control" id="user_id" name="user_id" placeholder="Ingresa un ID único de usuario" required>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Registrar</button>
+            </form>
+
+            <div class="footer-links">
+                <a href="{{ url_for('index') }}" class="link-back">Volver a la página principal</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
