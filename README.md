@@ -37,15 +37,12 @@ pip install opencv-python opencv-contrib-python flask numpy
 ## Uso
 - **Registrar un usuario:** Dirígete a la página de registro e ingresa un ID de usuario para comenzar a capturar las imágenes de su rostro.
   
-<div align="center">
-<img src="images/menu.png" alt="Logo de mi proyecto" width="200"/>
-</div>
-<div align="center"> <img src="images/menu.png" alt="Menú principal" width="200"/> <p><em>Imagen del menú principal, desde donde puedes acceder al registro de usuario.</em></p> </div> <div align="center"> <img src="images/registro.png" alt="Formulario de registro" width="200"/> <p><em>Formulario de registro donde puedes ingresar el ID de usuario y capturar las imágenes del rostro.</em></p> </div>
+<div align="center"> <img src="images/menu.png" alt="Menú principal" width="350"/> <p><em>Imagen del menú principal, desde donde puedes acceder al registro de usuario.</em></p> </div> <div align="center"> <img src="images/registro.png" alt="Formulario de registro" width="350"/> <p><em>Formulario de registro donde puedes ingresar el ID de usuario y capturar las imágenes del rostro.</em></p> </div>
 
 - **Entrenar el modelo:** El sistema entrenará automáticamente el modelo con las imágenes capturadas.
 
-<div align="center"> <img src="images/data.png" alt="Captura de imágenes para el entrenamiento" width="200"/> <p><em>Imagen mostrando el proceso de captura y almacenamiento de las imágenes para entrenar el modelo.</em></p> </div>
+<div align="center"> <img src="images/data.png" alt="Captura de imágenes para el entrenamiento" width="350"/> <p><em>Imagen mostrando el proceso de captura y almacenamiento de las imágenes para entrenar el modelo.</em></p> </div>
 
 - **Autenticación:** Ve a la página de login e ingresa el ID de usuario. El sistema intentará autenticarte mediante el reconocimiento de tu rostro en tiempo real.
 
-<div align="center"> <img src="images/login.png" alt="Pantalla de login" width="200"/> <p><em>Pantalla de login donde puedes ingresar tu ID de usuario para iniciar sesión.</em></p> </div> <div align="center"> <img src="images/fail.png" alt="Autenticación fallida" width="200"/> <p><em>Imagen que aparece cuando la autenticación falla debido a un error en el reconocimiento facial.</em></p> </div>
+<div align="center"> <img src="images/login.png" alt="Pantalla de login" width="350"/> <p><em>Pantalla de login donde puedes ingresar tu ID de usuario para iniciar sesión.</em></p> </div> <div align="center"> <img src="images/fail.png" alt="Autenticación fallida" width="350"/> <p><em>Imagen que aparece cuando la autenticación falla debido a un error en el reconocimiento facial.</em></p> </div>
