@@ -37,7 +37,14 @@ pip install opencv-python opencv-contrib-python flask numpy
 
 ## Uso
 - **Registrar un usuario:**: Dirígete a la página de registro e ingresa un ID de usuario para comenzar a capturar las imágenes de su rostro.
+<img src="images/menu.png" alt="Logo de mi proyecto" width="200"/>
+
+<img src="images/registro.png" alt="Logo de mi proyecto" width="200"/>
+
 
 - **Entrenar el modelo:**: El sistema entrenará automáticamente el modelo con las imágenes capturadas.
-- **Autenticación:**: Ve a la página de login e ingresa el ID de usuario. El sistema intentará autenticarte mediante el reconocimiento de tu rostro en tiempo real.
 <img src="images/data.png" alt="Logo de mi proyecto" width="200"/>
+
+- **Autenticación:**: Ve a la página de login e ingresa el ID de usuario. El sistema intentará autenticarte mediante el reconocimiento de tu rostro en tiempo real.
+<img src="images/login.png" alt="Logo de mi proyecto" width="200"/>
+<img src="images/fail.png" alt="Logo de mi proyecto" width="200"/>
