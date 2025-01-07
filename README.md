@@ -31,19 +31,10 @@ Antes de ejecutar el proyecto, asegúrate de tener instalados los siguientes paq
 pip install opencv-python opencv-contrib-python flask numpy
 ```
 
-Autenticación: Verificación de identidad en tiempo real mediante reconocimiento facial. Si el rostro del usuario coincide con el registro y la confianza es suficiente, el acceso es concedido.
-Interfaz web: Usa Flask para proporcionar una interfaz web sencilla donde los usuarios pueden registrarse e iniciar sesión.
-Tecnologías Utilizadas
-Python 3.x: Lenguaje de programación utilizado.
-OpenCV: Librería para el procesamiento de imágenes y el reconocimiento facial.
-Flask: Framework web para crear la aplicación y gestionar las rutas.
-LBPH (Local Binary Pattern Histogram): Algoritmo de OpenCV para la creación del modelo de reconocimiento facial.
-HTML/CSS: Para la creación de las páginas web de la interfaz.
-Requisitos
-Antes de ejecutar el proyecto, asegúrate de tener instalados los siguientes paquetes:
-pip install opencv-python opencv-contrib-python flask numpy
-Uso
-Registrar un usuario: Dirígete a la página de registro e ingresa un ID de usuario para comenzar a capturar las imágenes de su rostro.
-Entrenar el modelo: El sistema entrenará automáticamente el modelo con las imágenes capturadas.
-Autenticación: Ve a la página de login e ingresa el ID de usuario. El sistema intentará autenticarte mediante el reconocimiento de tu rostro en tiempo real.
+---
+
+## Uso
+- **Registrar un usuario:**: Dirígete a la página de registro e ingresa un ID de usuario para comenzar a capturar las imágenes de su rostro.
+- **Entrenar el modelo:**: El sistema entrenará automáticamente el modelo con las imágenes capturadas.
+- **Autenticación:**: Ve a la página de login e ingresa el ID de usuario. El sistema intentará autenticarte mediante el reconocimiento de tu rostro en tiempo real.
 <img src="images/data.png" alt="Logo de mi proyecto" width="200"/>
