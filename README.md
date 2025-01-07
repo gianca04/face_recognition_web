@@ -9,6 +9,7 @@ Este proyecto es un **sistema de autenticación basado en reconocimiento facial*
 - **Registro de usuario**: Captura de múltiples imágenes del rostro de un usuario para crear su perfil en el sistema.
 - **Entrenamiento del modelo**: Utiliza las imágenes capturadas para entrenar un modelo de reconocimiento facial **LBPH (Local Binary Pattern Histogram)**.
 <img src="images/data.png" alt="Logo de mi proyecto" width="300"/>
+
 - **Autenticación**: Verificación de identidad en tiempo real mediante el reconocimiento facial. Si el rostro del usuario coincide con el registro y la confianza es suficiente, el acceso es concedido.
 - **Interfaz web**: Usando **Flask**, proporciona una interfaz web sencilla donde los usuarios pueden registrarse e iniciar sesión.
 
